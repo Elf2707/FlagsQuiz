@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (key.equals(CHOICES)) {
                 quizFragment.updateGuessRows(sharedPreferences);
-                quizFragment.resetQuize();
+                quizFragment.resetQuiz();
             } else if (key.equals(REGIONS)) {
                 Set<String> regions =
                         sharedPreferences.getStringSet(REGIONS, null);
