@@ -309,8 +309,7 @@ public class MainActivityFragment extends Fragment {
         public Dialog onCreateDialog(Bundle bundle) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-            builder.setMessage("Restart");
-
+            builder.setMessage(getArguments().getString("message"));
             builder.setPositiveButton(R.string.reset_quiz, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
